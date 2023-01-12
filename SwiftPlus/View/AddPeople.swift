@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+
 struct AddPeople: View {
+    
+    @EnvironmentObject var people: [Person]
     
     @Environment(\.dismiss) var dismiss
 
@@ -43,12 +46,10 @@ struct AddPeople: View {
                     
                     DatePicker("Enter your birthday", selection: $date, displayedComponents: [.date])
                         .datePickerStyle(GraphicalDatePickerStyle())
-                    
                 }
                 
                 Spacer()
                 Spacer()
-                
             }
             .padding()
             .toolbar {
@@ -57,6 +58,9 @@ struct AddPeople: View {
                     Button("Done") {
                         print("done tapped!")
                         dismiss()
+                        
+//                        let newPerson = Person(name: name)
+//                        people.append(newPerson)
                     }
                 }
             }
@@ -71,4 +75,5 @@ struct AddPeople_Previews: PreviewProvider {
         AddPeople()
     }
 }
+
 

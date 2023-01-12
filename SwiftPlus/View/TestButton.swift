@@ -27,14 +27,29 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack {
+            
             List {
                 ForEach(people, id: \.id) { person in
                     Text(person.name)
                 }
             }
             .navigationBarTitle("People")
+            
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: {
+//                        isSheetShowing.toggle()
+//                    }) {
+//                        Image(systemName: "plus")
+//                    }
+//                    .sheet(isPresented: $isSheetShowing) {
+//                        AddPeople().environmentObject(self.people)
+//                    }
+//                }
+//            }
+            
             .toolbar {
-
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         isSheetShowing.toggle()
@@ -46,8 +61,8 @@ struct ContentView: View {
                     }
                 }
             }
+            
         }
-          
     }
 }
 
