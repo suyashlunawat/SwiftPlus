@@ -22,6 +22,7 @@ struct PeopleView: View {
                 .padding(.leading, 30)
                 .padding(.trailing, 30)
                 Spacer()
+                
                 List{
                     ForEach(0..<5){ list in
                         Section{

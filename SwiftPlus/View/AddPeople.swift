@@ -7,56 +7,68 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AddPeople: View {
     
+    @Environment(\.dismiss) var dismiss
+
     @State private var date = Date.now
     @State private var name: String = ""
 
     var body: some View {
         
-        VStack {
-                            
-            //Name
-            VStack(alignment: .leading) {
-                Text("Name").font(.title2)
-                HStack {
-                    TextField("Search...", text: $name)
-                    Image(systemName: "x.circle.fill")
-
-                }
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
+        NavigationStack {
             
-            Spacer()
+            VStack {
+                
+                //Name
+                VStack(alignment: .leading) {
                     
-            //Calendar
-            VStack(alignment: .leading) {
+                    Text("Name").font(.title)
+                    
+                    HStack {
+                        TextField("Search...", text: $name)
+                        Image(systemName: "x.circle.fill")
+
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
                 
-                Text("Birthday")
-                    .font(.title)
+                Spacer()
+                        
+                //Calendar
+                VStack(alignment: .leading) {
+                    
+                    Text("Birthday")
+                        .font(.title)
+                    
+                    DatePicker("Enter your birthday", selection: $date, displayedComponents: [.date])
+                        .datePickerStyle(GraphicalDatePickerStyle())
+                    
+                }
                 
-                DatePicker("Enter your birthday", selection: $date, displayedComponents: [.date])
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    .frame(maxHeight: 400)
+                Spacer()
+                Spacer()
                 
             }
-            
-            Spacer()
-            Spacer()
-
-            
-
+            .padding()
+            .toolbar {
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Done") {
+                        print("done tapped!")
+                        dismiss()
+                    }
+                }
+            }
             
         }
-        .padding()
-
         
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AddPeople_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AddPeople()
     }
 }
 
