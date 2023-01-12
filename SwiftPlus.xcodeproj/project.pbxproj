@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E11F8F629704C64006B53E7 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F8F529704C64006B53E7 /* TabBarView.swift */; };
+		5E11F8FA29704E83006B53E7 /* contactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F8F929704E83006B53E7 /* contactView.swift */; };
+		5E11F8FC29704EAB006B53E7 /* mainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F8FB29704EAB006B53E7 /* mainScreenView.swift */; };
+		5E11F8FE297051F5006B53E7 /* settingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F8FD297051F5006B53E7 /* settingView.swift */; };
 		D9E68255297047A300152CAA /* SwiftPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E68254297047A300152CAA /* SwiftPlusApp.swift */; };
 		D9E68257297047A300152CAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E68256297047A300152CAA /* ContentView.swift */; };
 		D9E68259297047A600152CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E68258297047A600152CAA /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E11F8F529704C64006B53E7 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		5E11F8F929704E83006B53E7 /* contactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactView.swift; sourceTree = "<group>"; };
+		5E11F8FB29704EAB006B53E7 /* mainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenView.swift; sourceTree = "<group>"; };
+		5E11F8FD297051F5006B53E7 /* settingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingView.swift; sourceTree = "<group>"; };
 		D9E68251297047A300152CAA /* SwiftPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E68254297047A300152CAA /* SwiftPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlusApp.swift; sourceTree = "<group>"; };
 		D9E68256297047A300152CAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			children = (
 				D9E68254297047A300152CAA /* SwiftPlusApp.swift */,
 				D9E68256297047A300152CAA /* ContentView.swift */,
+				5E11F8FB29704EAB006B53E7 /* mainScreenView.swift */,
+				5E11F8F529704C64006B53E7 /* TabBarView.swift */,
+				5E11F8FD297051F5006B53E7 /* settingView.swift */,
+				5E11F8F929704E83006B53E7 /* contactView.swift */,
 				D9E68258297047A600152CAA /* Assets.xcassets */,
 				D9E6825A297047A600152CAA /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E68257297047A300152CAA /* ContentView.swift in Sources */,
+				5E11F8FE297051F5006B53E7 /* settingView.swift in Sources */,
+				5E11F8FC29704EAB006B53E7 /* mainScreenView.swift in Sources */,
+				5E11F8F629704C64006B53E7 /* TabBarView.swift in Sources */,
 				D9E68255297047A300152CAA /* SwiftPlusApp.swift in Sources */,
+				5E11F8FA29704E83006B53E7 /* contactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
