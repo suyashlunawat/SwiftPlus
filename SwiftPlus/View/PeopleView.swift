@@ -25,7 +25,7 @@ struct PeopleView: View {
                 List{
                     ForEach(0..<5){ list in
                         Section{
-                            Text("Hello")
+                            PeopleList()
                         }
                     }
                 }.scrollContentBackground(.hidden)
