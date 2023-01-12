@@ -28,7 +28,7 @@ struct PeopleView: View {
                             Text("Hello")
                         }
                     }
-                }
+                }.scrollContentBackground(.hidden)
             }
         }
     }

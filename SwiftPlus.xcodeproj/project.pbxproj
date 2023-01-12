@@ -12,6 +12,7 @@
 		D9E68259297047A600152CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E68258297047A600152CAA /* Assets.xcassets */; };
 		D9E6825C297047A600152CAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E6825B297047A600152CAA /* Preview Assets.xcassets */; };
 		DECD1EDC29704BEE00BD9EF2 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD1EDB29704BEE00BD9EF2 /* TextView.swift */; };
+		DECD1EDE2970564300BD9EF2 /* PeopleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD1EDD2970564300BD9EF2 /* PeopleList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D9E68258297047A600152CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9E6825B297047A600152CAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DECD1EDB29704BEE00BD9EF2 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		DECD1EDD2970564300BD9EF2 /* PeopleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				D9E68256297047A300152CAA /* PeopleView.swift */,
 				DECD1EDB29704BEE00BD9EF2 /* TextView.swift */,
+				DECD1EDD2970564300BD9EF2 /* PeopleList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECD1EDE2970564300BD9EF2 /* PeopleList.swift in Sources */,
 				DECD1EDC29704BEE00BD9EF2 /* TextView.swift in Sources */,
 				D9E68257297047A300152CAA /* PeopleView.swift in Sources */,
 				D9E68255297047A300152CAA /* SwiftPlusApp.swift in Sources */,
@@ -287,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
