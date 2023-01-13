@@ -15,20 +15,26 @@ struct PeopleView: View {
                 HStack{
                     HeaderText(text: "People")
                     Spacer()
-                    Image(systemName: "plus.circle")
-                        .font(.system(size: 35))
-                        .foregroundColor(Color("ButtonColor"))
+                    Button(action: {}){
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 35))
+                            .foregroundColor(Color("ButtonColor"))
+                    }
                 }
                 .padding(.leading, 30)
                 .padding(.trailing, 30)
                 Spacer()
                 List{
-                    ForEach(0..<5){ list in
-                        Section{
-                            PeopleList()
-                        }
+                    ForEach(0..<9){ list in
+                        ZStack {
+                            Section {
+                                PeopleList()
+                            }
+                        }.listRowBackground(Color("BackgroundColor"))
+                            .listRowSeparator(.hidden)
                     }
-                }.scrollContentBackground(.hidden)
+                }.listStyle(.plain)
+                .scrollContentBackground(.hidden)
             }
         }
     }
